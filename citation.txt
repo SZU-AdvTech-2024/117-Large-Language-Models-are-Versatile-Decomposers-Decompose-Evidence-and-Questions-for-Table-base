@@ -1,16 +1,9 @@
 @inproceedings{REPO117,
     author = "Ye, Yunhu and Hui, Binyuan and Yang, Min and Li, Binhua and Huang, Fei and Li, Yongbin",
-    address = "New York, NY, USA",
     booktitle = "Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval",
-    doi = "10.1145/3539618.3591708",
-    isbn = "9781450394086",
-    keywords = "large language models, pre-trained language models, table-based reasoning",
-    location = "Taipei, Taiwan",
     numpages = "11",
     pages = "174–184",
-    publisher = "Association for Computing Machinery",
     series = "SIGIR '23",
     title = "{Large Language Models are Versatile Decomposers: Decomposing Evidence and Questions for Table-based Reasoning}",
-    url = "https://doi.org/10.1145/3539618.3591708",
     year = "2023"
 }
