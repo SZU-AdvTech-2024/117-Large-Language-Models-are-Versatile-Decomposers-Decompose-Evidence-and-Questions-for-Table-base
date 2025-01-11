@@ -1,0 +1,99 @@
+making question in cloze style and decompse question into continuity smaller question.
+
+/*
+table caption : 2008 sidecarcross world championship.
+col : position | driver / passenger | equipment | bike no | points
+row 1 : 1 | daniël willemsen / reto grütter | zabel - vmc | 1 | 531
+row 2 : 2 | kristers sergis / kaspars stupelis | ktm - ayr | 3 | 434
+*/
+Q : bike number 3 is the only one to use equipment ktm - ayr.
+sub questions :
+there are {how many = a1} use equipment ktm - ayr.
+bike number 3 is {how many = a2} use equipment ktm - ayr.
+
+/*
+table caption : scania ab.
+col : shareholder name | a shares | b shares | % of capital | % of votes
+row 1 : volkswagen aktiengesellschaft | 306232239 | 59037822 | 45.66 | 70.94
+row 2 : man se | 73047179 | 33718857 | 13.35 | 17.37
+*/
+Q : only one shareholder has an a shares of 0.
+sub questions :
+{how many = a1} shareholder has an a shares of 0.
+
+/*
+table caption : rawalpindi rams.
+col : played | wins | losses | no result | % win
+row 1 : 2 | 1 | 1 | 0 | 50.00%
+row 2 : 6 | 1 | 5 | 0 | 16.87%
+*/
+Q : there are no games with results lower than 0 and no wins higher than 10.
+sub questions :
+there are {how many = a1} games with results lower than 0.
+there are {how many = a2} games with wins higher than 10.
+
+/*
+table caption : 1996 pittsburgh steelers season.
+col : week | date | opponent | location | time ( et ) | result | record
+row 1 : 1 | sun sep 1 | jacksonville jaguars | alltel stadium | 1:00 pm | l 24 - 9 | 0 - 1
+row 2 : 2 | sun sep 8 | baltimore ravens | three rivers stadium | 1:00 pm | w 31 - 17 | 1 - 1
+*/
+Q : the steelers won less games than they lost in 1996.
+sub questions :
+steelers won {how many = a1} games.
+steelers lost {how many = a2} games.
+
+/*
+statement : two of the seasons games were played in the gold coast convention centre.
+table caption : 2008 - 09 nbl season.
+col : date | home team | score | away team | venue | crowd | box score | report
+row 1 : 31 december | cairns taipans | 105 - 112 | wollongong hawks | cairns convention centre | 3853 | box score | -
+row 2 : 31 december | gold coast blaze | 103 - 94 | adelaide 36ers | gold coast convention centre | 2233 | box score | -
+*/
+Q : two of the seasons games were played in the gold coast convention centre.
+sub questions : 
+{how many = a1} seasons games were played in the gold coast convention centre.
+
+/*
+table caption : 1957 vfl season.
+col : home team | home team score | away team | away team score | venue | crowd | date
+row 1 : footscray | 6.6 (42) | north melbourne | 8.13 (61) | western oval | 13325 | 10 august 1957
+row 2 : essendon | 10.15 (75) | south melbourne | 7.13 (55) | windy hill | 16000 | 10 august 1957
+*/
+Q : collingwood was the away team playing at the brunswick street oval venue.
+sub questions :
+{away team = a1} was the away team playing at the brunswick street oval venue.
+
+/*
+table caption : 2003 pga championship.
+col : place | player | country | score | to par
+row 1 : 1 | shaun micheel | united states | 69 + 68 = 137 | - 3
+row 2 : t2 | billy andrade | united states | 67 + 72 = 139 | - 1
+*/
+Q : phil mickelson was one of seven players with + 1 to par , all of which had placed t5.
+sub questions : 
+there are {how many = a1} players with + 1 to par.
+phil mickelson is {how many = a2} players with + 1 to par.
+
+/*
+table caption : co - operative commonwealth federation (ontario section).
+col : year of election | candidates elected | of seats available | of votes | ratings
+row 1 : 1934 | 1 | 90 | na | 7.0%
+row 2 : 1937 | 0 | 90 | na | 5.6%
+*/
+Q : statement : the 1937 election had a ratings that was 1.4% lower than that of the 1959 election.
+sub questions :
+the 1937 election had a ratings {ratings = a1}.
+the 1959 election had a ratings {ratings = a2}.
+the 1937 election had a ratings that was 1.4% lower than that of the 1959 election.
+
+/*
+table caption : 1966 british grand prix.
+col : driver | constructor | laps | time / retired | grid
+row 1 : jack brabham | brabham - repco | 80 | 2:13:13.4 | 1
+row 2 : denny hulme | brabham - repco | 80 | + 9.6 | 2
+*/
+Q : mike spence was one of three drivers who has a grid greater than 5.
+sub questions : 
+there are {how many = a1} drivers who has a grid greater than 5.
+mike spence is {how many = a2} drivers who has a grid greater than 5.
